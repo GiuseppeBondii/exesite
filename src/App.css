@@ -1,0 +1,23 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.titolo{
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  font-family: Helvetica;
+  font-size: 12vw;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--green),
+    var(--blue),
+    var(--black),
+    var(--green)
+  );
+  background-size: 200%;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  }
+  

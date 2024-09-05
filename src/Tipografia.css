@@ -1,0 +1,66 @@
+html {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw; 
+    height: 100vh;
+  }
+
+#yellow{
+    font-size: 1em;
+}
+
+#blue{
+    font-size: 3em;
+}
+#magenta{
+    font-size: 4em;
+}
+
+#red{
+    font-size: calc(4em - 12px);
+}
+
+#green{
+    font-size: 2rem;
+}
+
+#orange{
+    font-size: 1px;
+}
+
+
+#yellow2{
+    height: 25vh;
+    width: 25vw;
+    background-color: yellow;
+}
+
+#blue2{
+    height: 50vh;
+    width: 50vw;
+    background-color: blue;
+}
+#magenta2{
+    height: calc(50vh + 100px);;
+    width: calc(50vw + 100px);; 
+    background-color: magenta;
+}
+
+#red2{
+    height: calc(50vh - 15px);;
+    width: calc(50vw - 15px);; 
+    background-color: red;
+}
+
+#green2{
+    height: 50vh;
+    width: 50vh; 
+    background-color: green;
+}
+
+#orange2{
+    height: calc(0.5 * 75vh);;
+    width: calc(0.5 * 75vw);; 
+    background-color: orange;
+}

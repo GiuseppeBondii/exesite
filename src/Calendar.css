@@ -1,0 +1,167 @@
+/* Calendar.css */
+.page-wrapper {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #344cd1;
+    background-repeat:inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mac-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 3, 5, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.mac-nav-brand img {
+    height: 10vh;
+    max-height: 50px;
+}
+
+.mac-nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.mac-nav-links li {
+    margin-left: 30px;
+}
+
+.mac-nav-links li:hover,
+.mac-nav-links li:focus {
+    color: rgb(100,62,62,0.8);
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1200px; /* Optional: sets a max width for very large screens */
+    box-sizing: border-box;
+}
+
+.note,
+.calendar {
+    overflow: hidden;
+    margin:10%;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    width: 80vw;
+    height: auto;
+    max-height: 90vh; 
+    box-sizing: border-box;
+}
+
+.note {
+    background-image: linear-gradient(to top, transparent 98%, #ddd 3%);
+    background-size: 100% 10vh;
+}
+
+.tnote,
+.month {
+    background-color: #ccb62c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.month {
+    background-color: #d14934;
+}
+
+.para {
+    margin: 5vh;
+}
+
+.grid-container,
+.date-grid {
+    margin: 2vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-content: center;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+.date-grid button {
+    border: 0;
+    width: 100%; /* Full width of the grid cell */
+    height: 4ch;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+    outline: none;
+    background-color: #d14934;
+    color: white;
+    cursor: pointer;
+}
+
+.date-grid button:active {
+    background-color: #b30000;
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .note,
+    .calendar {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mac-nav-brand img {
+        height: 6vh;
+    }
+    
+    .mac-nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .mac-nav-links li {
+        margin: 5px 0;
+    }
+    
+    .note,
+    .calendar {
+        max-height: 250px;
+    }
+}

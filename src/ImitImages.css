@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+
+.imit body{
+    background-color: rgb(170,157 ,144);
+    font-family: "MedievalSharp", cursive;
+    display: flex;
+    columns: 1;
+    flex-direction: column;  
+    color: rgb(62, 47, 35);
+    padding-bottom: 5%;
+
+}
+.imit img{
+    margin-top: 3%;
+    width: 60%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.imit h1{    
+    color: rgb(62, 47, 35);
+    font-stretch:200%;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+
+}
+
+.imit p{
+    width: 60%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.fristLine{
+    font-size:500%;
+    font-stretch: 250%;
+    line-height: 1;
+}
+
+.secondLine{
+    font-size:250%;
+    font-stretch: 250%;
+    line-height: 2;
+}
+
+.thirdLine{
+    font-size:150%;
+    font-stretch: 250%;
+    margin-top: -2%;
+    line-height: 3;
+}
+
+.fristWord{
+    text-transform: uppercase;
+}
+.imit p::first-letter {
+    font-size: 500%;
+    padding-right: 1%;
+    line-height: 1%;
+}
+.fristWord{
+    text-transform: uppercase;
+}

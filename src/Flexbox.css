@@ -1,0 +1,36 @@
+html {
+font-family: 'Times New Roman', Times, serif;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+margin: 0;
+}
+
+header {
+background: purple;
+height: 100px;
+}
+
+h1 {
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+color: white;
+line-height: 100px;
+margin: 0;
+}
+
+article {
+color: rgb(76, 83, 88);
+padding: 10px;
+margin: 10px;
+background: rgb(77, 255, 0);
+flex: 1 300px; 
+}
+
+  

@@ -1,0 +1,55 @@
+.elem_in_alto{
+    display: flex;
+    height: 20vh;
+    background-color: grey;
+    width: 90vw;
+    margin-left:5vw ;
+    margin-right:5vw ;
+    margin-top: 4vh;
+    border-radius:10px;
+}
+
+.box{
+    display: flex;
+    margin-left:3vw ;
+    margin-right:3vw;
+}
+
+.box div{
+    height: 30vh;
+    margin-left:2vw ;
+    margin-right:2vw ;
+    margin-top: 4vh;;
+    background-color: rgb(95, 95, 204);
+    border-radius:10px;
+    flex: 1 300px; 
+}
+
+.Pbox{
+    display: flex;
+    margin-top: 5vh;
+    margin-left:5vw ;
+    margin-right:5vw;
+    padding-bottom: 7vh;
+}
+
+#mid{
+    background-color: rgb(135, 129, 244);
+}
+#small{
+    background-color: rgb(181, 180, 197);
+}
+
+/* Nascondi l'elemento #mid se la larghezza dello schermo è inferiore a 750px */
+@media (max-width: 700px) {
+    #mid {
+        display: none;
+    }
+}
+
+/* Nascondi l'elemento #small se la larghezza dello schermo è inferiore a 900px */
+@media (max-width: 1000px) {
+    #small {
+        display: none;
+    }
+}

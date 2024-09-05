@@ -1,0 +1,34 @@
+form.Form_style{
+    display: table;
+    margin: 30px;
+}   
+
+div.Form_style{
+    display: table-row;
+    margin: 4px;
+}
+
+.Form_style label,
+.Form_style input {
+  display: table-cell;
+  margin: 10px;
+}
+
+.Form_style label {
+  padding-right: 10px;
+}
+
+.Submit-Volo{
+    color: red;
+    font-size: medium;
+}
+
+.Form_style h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 0, 0);
+    margin: 30px;
+}
+
+.margine_basso{
+    margin-bottom: 30px;
+}

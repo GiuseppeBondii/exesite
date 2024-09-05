@@ -1,0 +1,59 @@
+
+.MEDAPP{
+    margin-left:2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 6vh;
+    columns: 1;
+    column-width: 60vw;
+    background-color: rgb(136, 164, 241);
+}
+.MEDAPP h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:10vw;
+    margin-right: 10vw;
+    color: black;
+    font-size: 5vw;
+}
+.MEDAPP form{
+    flex-direction: row;
+}
+
+.MEDAPP select{
+    margin-top: 2vh;
+    margin-bottom:2vh;
+    color: rgb(0, 0, 0);
+}
+
+.MEDAPP input, .MEDAPP label{
+    display: table-cell;
+    color: rgb(0, 0, 0);
+    width: 50vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+
+}
+
+.MEDAPP textarea{
+    height: 30vh;
+    width: 50vw;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+
+
+}
+
+.MEDAPP column{
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.MEDAPP button{
+    margin-top: 2vh;
+    width: 50vw;
+}
+

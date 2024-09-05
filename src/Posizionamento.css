@@ -1,0 +1,83 @@
+
+.Posizionamento{
+    margin: 20vh;
+    position: sticky;
+}
+#one{
+height: 50vw;
+width: 50vw;
+position:sticky;
+background-color: red;
+top:0;
+left:0;
+}
+
+#two{
+    height: 50vw;
+    width: 50vw;
+    position: sticky;
+background-color: blue;
+top:0;
+left:50vw;
+}
+
+#three{
+    height: 50vw;
+    width: 50vw;
+    position: sticky;
+background-color: red;
+top:50vw;
+left:50vw;
+}
+
+#four{
+    height: 50vw;
+    width: 50vw;
+    position: sticky;
+background-color: blue;
+top:50vw;
+left:0;
+}
+
+#one2{
+    height: 20vh;
+    width: 100vw;
+    position:sticky;
+    background-color: blue;
+    top:0;
+    left:0;
+    }
+    
+    #two2{
+        height: 20vh;
+        width: 100vw;
+        position: sticky;
+    background-color: green;
+    top:20vh;
+    }
+    
+    #three2{
+    height: 20vh;
+    width: 100vw;
+    position: sticky;
+    background-color: yellow;
+    top:40vh;
+
+    }
+    
+    #four2{
+        height: 20vh;
+        width: 100vw;
+        position: sticky;
+    background-color: red;
+    top:60vh;
+
+    }
+    #five{
+        height: 20vh;
+        width: 100vw;
+        position: sticky;
+    background-color: orange;
+    top:80vh;
+
+    }
