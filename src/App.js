@@ -25,7 +25,7 @@ import ESAME2 from './esami/ESAME2';
 function App() {
   return (
     
-<Router  basename="/">
+<Router  basename="/exesite">
       <div>
         <Routes>
           <Route path="/" element={<Home/>} />
