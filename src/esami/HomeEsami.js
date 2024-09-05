@@ -13,6 +13,10 @@ function HomeEsami(){
           <li><Link to="../">Home</Link></li></div>
           <li><Link to="../esami/ESAME1">ESAME1</Link></li>
           <li><Link to="../esami/ESAME2">ESAME2</Link></li>
+          <li><Link to="../esami/ESAME3">ESAME3</Link></li>
+          <li><Link to="../esami/ESAME4">ESAME4</Link></li>
+
+
         </ul>
       </nav>
       </body>

@@ -20,6 +20,8 @@ import Wapp from './Wapp';
 import HomeEsami from './esami/HomeEsami';
 import ESAME1 from './esami/ESAME1';
 import ESAME2 from './esami/ESAME2';
+import ESAME3 from './esami/ESAME3';
+import ESAME4 from './esami/ESAME4';
 
 
 function App() {
@@ -45,6 +47,9 @@ function App() {
           <Route path="/esami/HomeEsami" element={<HomeEsami/>} />
           <Route path="/esami/ESAME1" element={<ESAME1/>} />
           <Route path="/esami/ESAME2" element={<ESAME2/>} />
+          <Route path="/esami/ESAME3" element={<ESAME3/>} />
+          <Route path="/esami/ESAME4" element={<ESAME4/>} />
+
 
         </Routes>
       </div>
