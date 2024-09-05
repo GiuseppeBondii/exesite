@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -25,7 +25,7 @@ import ESAME2 from './esami/ESAME2';
 function App() {
   return (
     
-<Router>
+<Router  basename="/">
       <div>
         <Routes>
           <Route path="/" element={<Home/>} />
