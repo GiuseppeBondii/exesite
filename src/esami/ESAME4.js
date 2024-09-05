@@ -68,6 +68,10 @@ function ESAME4(){
             <button>
                 Cancella Evento
             </button>
+            <button>
+                Visualizza Eventi
+            </button>
+
         </div>
     );
 }
