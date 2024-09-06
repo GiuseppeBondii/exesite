@@ -1,0 +1,131 @@
+/* Lo stile di base per la pagina */
+.Eventi {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    font-size: large;
+    background-color: #f2f2f7;
+    padding: 2vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* I pulsanti di default */
+.Eventi button {
+    background-color: #007aff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, width 0.5s ease;
+    margin: 1vh 0;
+    width: 200px;
+}
+
+/* I pulsanti diventano più scuri al passaggio del mouse */
+.Eventi button:hover {
+    background-color: #005ecb;
+    transform: scale(1.05);
+}
+
+/* Se nessun pulsante è attivo, i pulsanti occupano tutta la larghezza */
+.Eventi.all-screen button {
+    width: 40vw; /* Pulsanti occupano tutta la larghezza dello schermo */
+    max-width: none;
+    height: 30vh;
+    transition: all 1s ease-out;; /* Animazione sulla larghezza */
+}
+
+/* I moduli di input e la visualizzazione degli eventi */
+.EventiForm, #MODIFICA, #LISTAEVENTI {
+    background-color: white;
+    padding: 2rem;
+    margin: 2vh auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.EventiForm form, #MODIFICA form {
+    display: flex;
+    flex-direction: column;
+}
+
+.EventiForm label, #MODIFICA label {
+    margin-top: 1.5vh;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.EventiForm input, .EventiForm textarea, #MODIFICA input, #MODIFICA textarea {
+    margin-top: 0.5vh;
+    padding: 0.75rem;
+    border-radius: 20px;
+    border: 1px solid #d1d1d6;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.EventiForm input:focus, .EventiForm textarea:focus, #MODIFICA input:focus, #MODIFICA textarea:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+.EventiForm textarea, #MODIFICA textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Il pulsante di submit con animazione */
+#submit {
+    background-color: #34c759;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 2vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+#submit:hover {
+    background-color: #30b957;
+    transform: scale(1.05);
+}
+
+/* Lista degli eventi */
+.Eventi li {
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d1d1d6;
+    font-size: 1rem;
+    color: #1c1c1e;
+}
+
+.Eventi ul {
+    margin-left: 0;
+    padding: 0;
+}
+
+/* Per la sezione modifica eventi */
+#MODIFICA input, #MODIFICA label, #MODIFICA textarea {
+    margin-top: 1.5vh;
+}
+
+#MODIFICA form {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #d1d1d6;
+}
+
+#MODIFICA input[type="datetime-local"] {
+    font-family: 'SF Pro Text', sans-serif;
+}
