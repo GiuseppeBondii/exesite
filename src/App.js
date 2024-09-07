@@ -22,6 +22,8 @@ import ESAME1 from './esami/ESAME1';
 import ESAME2 from './esami/ESAME2';
 import ESAME3 from './esami/ESAME3';
 import ESAME4 from './esami/ESAME4';
+import ESAME5 from './esami/ESAME5';
+import ESAME6 from './esami/ESAME6';
 
 
 function App() {
@@ -49,7 +51,8 @@ function App() {
           <Route path="/esami/ESAME2" element={<ESAME2/>} />
           <Route path="/esami/ESAME3" element={<ESAME3/>} />
           <Route path="/esami/ESAME4" element={<ESAME4/>} />
-
+          <Route path="/esami/ESAME5" element={<ESAME5/>} />
+          <Route path="/esami/ESAME6" element={<ESAME6/>} />
 
         </Routes>
       </div>

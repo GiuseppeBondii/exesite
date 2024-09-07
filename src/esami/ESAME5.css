@@ -1,0 +1,127 @@
+.pagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pagina div{
+    border-radius: 20px;
+}
+
+.scatolo{
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(128, 128, 128, 0.353);
+    margin-top: 5vh;
+}
+
+#lungo1{
+    margin-top:2vh ;
+    margin-left:2vw ;
+    margin-right: 2vw;
+    height: 15vh;
+    background-color: #8abade;
+}
+#parte2{
+    display: flex;
+    flex-direction: row;
+}
+
+#parte2 div{
+    margin-top:2vh ;
+    margin-left:2vw ;
+    margin-right:2vw ;
+    height: 30vh;
+    width: 46vw;
+}
+
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: orange;
+}
+#parte3{
+    display: flex;
+    flex-direction: row;
+}
+#parte3 div{
+    margin-top:2vh ;
+    margin-left:2vw ;
+    margin-right:2vw ;
+    height: 20vh;
+    width: calc(calc(100vw - 12vw) / 3);
+}
+
+#box3{
+    background-color: rgb(62, 62, 114);
+}
+
+#box4{
+    background-color: rgb(102, 62, 114);
+}
+#box5{
+    background-color: rgb(114, 104, 62);
+}
+
+
+
+@media(max-width: 600px){    
+    .scatolo{
+        width: 90vw;
+        height:auto;
+        margin-top: 2vh;
+        margin-bottom:2vh ;
+    }
+    
+    #lungo1{
+        margin-top:2vh ;
+        margin-left:2vw ;
+        margin-right: 2vw;
+        height: 10vh;
+        background-color: #8abade;
+    }
+    #parte2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #parte2 div{
+        margin-top:2vh ;
+        margin-left:2vw ;
+        margin-right:2vw ;
+        height: 20vh;
+        width: auto;
+    }
+    
+    #box1{
+        background-color: red;
+    }
+    #box2{
+        background-color: orange;
+    }
+    #parte3{
+        display: flex;
+        flex-direction: column;
+    }
+    #parte3 div{
+        margin-top:2vh ;
+        margin-left:2vw ;
+        margin-right:2vw ;
+        height: 20vh;
+        width: auto;
+    }
+    
+    #box3{
+        background-color: rgb(62, 62, 114);
+    }
+    
+    #box4{
+        background-color: rgb(102, 62, 114);
+    }
+    #box5{
+        background-color: rgb(114, 104, 62);
+        margin-bottom:2vh ;
+    }
+}

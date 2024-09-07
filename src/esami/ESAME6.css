@@ -1,0 +1,67 @@
+.navBurger {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    align-items: center;
+  }
+  
+  #logo {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+  #items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+  
+  #items div:hover {
+    color: rgb(130, 130, 130);
+  }
+  
+  #item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #navBurger {
+    display: none;
+  }
+  
+  @media (max-width: 780px) {
+    #items {
+      display: none;
+    }
+  
+    #navBurger {
+      display: flex;
+      justify-content: end;
+      flex-grow: 1;
+      padding-right: 20px;
+    }
+  
+    #navBurger button {
+      border: none;
+      font-size: large;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  
+    .toggles {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      background-color: rgb(190, 170, 146);
+      padding: 10px;
+    }
+  }
+  
+  .toggles {
+    display: none;
+  }
+  
+  .toggles.active {
+    display: flex;
+  }

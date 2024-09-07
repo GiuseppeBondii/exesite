@@ -58,7 +58,7 @@
     box-sizing: border-box;
 }
 
-.note,
+.noteee,
 .calendar {
     overflow: hidden;
     margin:10%;
@@ -72,12 +72,12 @@
     box-sizing: border-box;
 }
 
-.note {
+.noteee {
     background-image: linear-gradient(to top, transparent 98%, #ddd 3%);
     background-size: 100% 10vh;
 }
 
-.tnote,
+.tnoteee,
 .month {
     background-color: #ccb62c;
     color: white;
@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 800px) {
-    .note,
+    .noteee,
     .calendar {
         max-height: 300px;
     }
@@ -160,7 +160,7 @@
         margin: 5px 0;
     }
     
-    .note,
+    .noteee,
     .calendar {
         max-height: 250px;
     }

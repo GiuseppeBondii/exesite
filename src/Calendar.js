@@ -17,7 +17,7 @@ function Calendar() {
             </div>
 
             <div className="content">
-                <div className="note">
+                <div className="noteee">
                     <div className="tnote">
                         <h2>Maggio 2024</h2>
                     </div>

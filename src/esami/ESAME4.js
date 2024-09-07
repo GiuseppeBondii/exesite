@@ -15,7 +15,7 @@ function ESAME4() {
         location: "",
         maxpp: "",
     });
-    const [error, setError] = useState("");
+    const [setError] = useState("");
     const [showForm, setShowForm] = useState(false);
     const [showMOD, setShowMOD] = useState(false);
     const [showList, setShowList] = useState(false);
