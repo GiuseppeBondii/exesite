@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/exesite/static/css/main.161c0349.css",
-    "main.js": "/exesite/static/js/main.70dfbafc.js",
+    "main.css": "/exesite/static/css/main.70b996bf.css",
+    "main.js": "/exesite/static/js/main.c956a2a2.js",
     "static/js/453.19c1cd33.chunk.js": "/exesite/static/js/453.19c1cd33.chunk.js",
+    "static/media/pinterest_logo.png": "/exesite/static/media/pinterest_logo.a53a58d4381cf38af30d.png",
+    "static/media/framework.png": "/exesite/static/media/framework.bc5bcdafd05874abeae0.png",
+    "static/media/cat.jpg": "/exesite/static/media/cat.8c777f0ee1c37f70e9e7.jpg",
+    "static/media/meduse.jpg": "/exesite/static/media/meduse.d7fba0744570a783fbc5.jpg",
+    "static/media/hi.jpg": "/exesite/static/media/hi.3c9988732ee87b241733.jpg",
+    "static/media/pianist.jpg": "/exesite/static/media/pianist.c6361b8c34c9adab2b86.jpg",
+    "static/media/dogs.jpg": "/exesite/static/media/dogs.f7d675742c128aeeb8c2.jpg",
+    "static/media/help.jpg": "/exesite/static/media/help.96346f92704c6432bc69.jpg",
+    "static/media/tomato.jpg": "/exesite/static/media/tomato.198b647c00f0073a0f87.jpg",
     "index.html": "/exesite/index.html",
-    "main.161c0349.css.map": "/exesite/static/css/main.161c0349.css.map",
-    "main.70dfbafc.js.map": "/exesite/static/js/main.70dfbafc.js.map",
+    "main.70b996bf.css.map": "/exesite/static/css/main.70b996bf.css.map",
+    "main.c956a2a2.js.map": "/exesite/static/js/main.c956a2a2.js.map",
     "453.19c1cd33.chunk.js.map": "/exesite/static/js/453.19c1cd33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.161c0349.css",
-    "static/js/main.70dfbafc.js"
+    "static/css/main.70b996bf.css",
+    "static/js/main.c956a2a2.js"
   ]
 }
