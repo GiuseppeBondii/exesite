@@ -120,7 +120,7 @@ function ESAME9() {
                         placeholder="Add a new task"
                     />
                     <button id='subm' type="submit">+</button>
-                    <button id='elimina' onClick={handleClick} >Delete</button>
+                    <button id='elimina' onClick={handleClick} >&#128465;</button>
                 </form>
             </div>
         </div>
