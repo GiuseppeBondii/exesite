@@ -19,8 +19,8 @@
   }
   
   #items div:hover {
-    color: rgb(130, 130, 130);
-  }
+    color: brown;
+}
   
   #item {
     margin-left: 10px;
@@ -35,6 +35,10 @@
     #items {
       display: none;
     }
+    #item:hover{
+        color: brown;
+    }
+  
   
     #navBurger {
       display: flex;
@@ -65,3 +69,5 @@
   .toggles.active {
     display: flex;
   }
+
+

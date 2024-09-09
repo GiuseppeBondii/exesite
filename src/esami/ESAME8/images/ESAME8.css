@@ -1,0 +1,130 @@
+/* Stile per la navbar */
+.navbarPin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1vh;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbarPin img {
+    width: 40px;
+    margin: 10px;
+}
+
+.navbarPin button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.navbarPin button:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbarPin input {
+    font-size: 1rem;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.07);
+    border: none;
+    margin: 8px;
+    border-radius: 20px;
+    width: calc(100vw - 410px);
+    padding: 5px 10px;
+}
+
+#bell {
+    color: black;
+    font-size: 1rem;
+    width: 20px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#notifications {
+    font-size: 2rem;
+    margin-top: -2px;
+    width: 20px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#bell:hover, #notifications:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Stile per il contenitore delle immagini */
+.pinContainer {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 1vw; /* Spaziatura tra le colonne */
+    row-gap: 1vh;    /* Spaziatura tra le righe */
+}
+
+.pinContainer img {
+    flex: 1 1 calc(20vw);
+    border-radius: 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    align-self: center;
+    max-width: 20vw;
+    height: auto;
+}
+
+img:hover {
+    filter: brightness(30%);
+}
+
+/* Wrapper per ciascuna immagine per mostrare il pulsante */
+.imageWrapper {
+    position: relative; /* Necessario per posizionare il pulsante rispetto all'immagine */
+    display: inline-block;
+    margin: 10px;
+}
+
+.pinImage {
+    width: 150px; /* Dimensione dell'immagine */
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.imageButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.8); /* Sfondo semi-trasparente */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+    display: none; /* Inizialmente nascosto */
+}
+
+/* Mostra il pulsante quando il mouse passa sopra il contenitore */
+.imageWrapper:hover .imageButton {
+    display: block;
+}
+
+/* Pulsante al passaggio del mouse */
+.imageButton:hover {
+    background-color: black;
+    color: white;
+}

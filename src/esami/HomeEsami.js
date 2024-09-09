@@ -17,6 +17,9 @@ function HomeEsami(){
           <li><Link to="../esami/ESAME4">ESAME4(si potrebbe incliudere nel progetto)</Link></li>
           <li><Link to="../esami/ESAME5">ESAME5</Link></li>
           <li><Link to="../esami/ESAME6">ESAME6</Link></li>
+          <li><Link to="../esami/ESAME7">ESAME7</Link></li>
+          <li><Link to="../esami/ESAME8/ESAME8">ESAME8</Link></li>
+          <li><Link to="../esami/ESAME9">ESAME9</Link></li>
         </ul>
       </nav>
       </body>
