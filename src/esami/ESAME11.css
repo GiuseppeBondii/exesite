@@ -1,0 +1,88 @@
+.LoginWin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.LoginWin win{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./imgGallery/IMG_8895.jpg");
+    background-size: cover;
+}
+
+.LoginWin over{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.627);
+}
+
+.LoginWin .card{
+    display: flex;
+    margin-top: 10vh;
+    height: 80vh;
+    margin-bottom: 10vh;
+    margin-right: 10vw;
+}
+
+
+
+#helpQuestion{
+    width:10px;
+    padding-bottom: 6px;
+}
+
+.effettivoForm{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.effettivoForm div{
+    margin-right: 2vw;
+    flex-direction: column;
+}
+
+.effettivoForm select{
+    border:none;
+    background-color: white;
+}
+
+.effettivoForm label{
+    font: size 0.03rem;
+}
+
+#continua{
+    display: block;
+    position:relative;
+    margin-left: calc(100% - 70px);
+    margin-top: 3vh;
+}
+
+#continua button{
+    border-radius: 20px;
+    background-color: #3652d2;
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.NomeAzienda{
+    display: flex;
+
+}
+
+.NomeAzienda h8{
+    color: white;
+    font-size: xx-large;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-weight: bolder;
+    z-index: 1;
+}

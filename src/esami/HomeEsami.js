@@ -21,6 +21,10 @@ function HomeEsami(){
           <li><Link to="../esami/ESAME8/ESAME8">ESAME8</Link></li>
           <li><Link to="../esami/ESAME9">ESAME9</Link></li>
           <li><Link to="../esami/ESAME10">ESAME10</Link></li>
+          <li><Link to="../esami/ESAME11">ESAME11</Link></li>
+          <li><Link to="../esami/ESAME12">ESAME12NON APRIRE</Link></li>
+
+
 
         </ul>
       </nav>
