@@ -15,6 +15,9 @@ function ESAME10() {
   const [nextIndex, setNextIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  const prima='<'
+  const dopo='>'
+
   useEffect(() => {
     if (isTransitioning) {
       const timer = setTimeout(() => {
@@ -61,8 +64,8 @@ function ESAME10() {
         <p>{imgGallery[currentIndex].descrizione}</p>
       </div>
       <div className="prevnext">
-        <button id="prev" onClick={handlePrev}>prev</button>
-        <button id="next" onClick={handleNext}>next</button>
+        <button id="prev" onClick={handlePrev}>{prima}</button>
+        <button id="next" onClick={handleNext}>{dopo}</button>
       </div>
     </div>
   );

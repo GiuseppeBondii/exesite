@@ -65,7 +65,7 @@
   .prevnext button {
     position: absolute;
     top: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -73,7 +73,7 @@
   }
   
   .prevnext button:hover {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(91, 11, 11, 0);
   }
   
   #next {
