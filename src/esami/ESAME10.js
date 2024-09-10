@@ -12,68 +12,60 @@ function ESAME10() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     if (isTransitioning) {
       const timer = setTimeout(() => {
+        setCurrentIndex(nextIndex);
         setIsTransitioning(false);
       }, 500); // Durata della transizione
       return () => clearTimeout(timer);
     }
-  }, [isTransitioning]);
+  }, [isTransitioning, nextIndex]);
 
-  const handleSkip = () => {
+  const transition = (newIndex) => {
     if (!isTransitioning) {
+      setNextIndex(newIndex);
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imgGallery.length);
     }
+  };
+
+  const handleNext = () => {
+    transition((currentIndex + 1) % imgGallery.length);
   };
 
   const handlePrev = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + imgGallery.length) % imgGallery.length);
-    }
+    transition((currentIndex - 1 + imgGallery.length) % imgGallery.length);
   };
 
-  function ImageToDisplay() {
-    const currentImage = imgGallery[currentIndex];
-    const nextIndex = (currentIndex + 1) % imgGallery.length;
-    const prevIndex = (currentIndex - 1 + imgGallery.length) % imgGallery.length;
-
-    return (
-      <div className='fotografie'>
-        <div className={`image-container ${isTransitioning ? 'transitioning' : ''}`}>
+  return (
+    <div className='fotografie'>
+      <div className={`image-container ${isTransitioning ? 'transitioning' : ''}`}>
+        <div className="image-layer current-layer">
           <img
-            className="image prev-image"
-            alt={`Immagine ${prevIndex}`}
-            src={imgGallery[prevIndex].url}
-          />
-          <img
-            className="image current-image"
             alt={`Immagine ${currentIndex}`}
-            src={currentImage.url}
+            src={imgGallery[currentIndex].url}
           />
+        </div>
+        <div className="image-layer next-layer">
           <img
-            className="image next-image"
             alt={`Immagine ${nextIndex}`}
             src={imgGallery[nextIndex].url}
           />
         </div>
-        <div className='titoloEdescrizione'>
-          <h5>{currentImage.titolo}</h5>
-          <p>{currentImage.descrizione}</p>
-        </div>
-        <div className="prevnext">
-          <button id="prev" onClick={handlePrev}>prev</button>
-          <button id="next" onClick={handleSkip}>next</button>
-        </div>
       </div>
-    );
-  }
-
-  return <ImageToDisplay />;
+      <div className='titoloEdescrizione'>
+        <h5>{imgGallery[currentIndex].titolo}</h5>
+        <p>{imgGallery[currentIndex].descrizione}</p>
+      </div>
+      <div className="prevnext">
+        <button id="prev" onClick={handlePrev}>prev</button>
+        <button id="next" onClick={handleNext}>next</button>
+      </div>
+    </div>
+  );
 }
 
 export default ESAME10;
