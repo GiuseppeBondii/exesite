@@ -27,6 +27,7 @@ import ESAME6 from './esami/ESAME6';
 import ESAME7 from './esami/ESAME7';
 import ESAME8 from './esami/ESAME8/images/ESAME8';
 import ESAME9 from './esami/ESAME9';
+import ESAME10 from './esami/ESAME10';
 
 
 function App() {
@@ -59,9 +60,7 @@ function App() {
           <Route path="/esami/ESAME7" element={<ESAME7/>} />
           <Route path="/esami/ESAME8/ESAME8" element={<ESAME8/>} />
           <Route path="/esami/ESAME9" element={<ESAME9/>} />
-
-
-
+          <Route path="/esami/ESAME10" element={<ESAME10/>} />
 
         </Routes>
       </div>

@@ -87,7 +87,7 @@
     height: auto;
 }
 
-img:hover {
+.pinContainer img:hover {
     filter: brightness(30%);
 }
 
