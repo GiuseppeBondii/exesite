@@ -158,7 +158,7 @@
 }
 
 .cardIMG{
-    max-width:45.5%;
+    width:40vw;
     height:auto;
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
