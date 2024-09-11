@@ -1,0 +1,171 @@
+/* Navbar */
+
+.Appartamenti{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.Appartamenti .navbar {
+    background-color: #F8F8F8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+/* Navbar brand */
+.Appartamenti .navbar-brand {
+    color: #102C57;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+/* Carousel styling */
+.carousel img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* ParteCards container */
+.ParteCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Cards styling */
+.ParteCards .card {
+    flex: 1 1 calc(50% - 20px); /* Responsive width: 2 cards per row */
+    background-color: #1679AB;
+    color: #F8F8F8;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ParteCards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Links within cards */
+.ParteCards .card a {
+    color: #FFCBCB;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.ParteCards .card a:hover {
+    color: #FF7B7B;
+}
+
+/* Titles and subtitles */
+.ParteCards .card-title, .ParteCards .card-subtitle {
+    color: #FFB1B1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Navbar */
+    .Appartamenti .navbar {
+        padding: 10px;
+    }
+
+    /* Cards: Single column on smaller screens */
+    .ParteCards .card {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Carousel images */
+    .carousel img {
+        max-height: 300px;
+    }
+
+    .mappa-container{
+        width: 100%;
+    }
+
+    .ParteCards .cardIMG img{
+        object-fit: cover;
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .ParteCards .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row on tablet */
+    }
+    .ParteCards .cardIMG img{
+        object-fit: cover;
+        height: 80vh;
+        width: 100%;
+     }
+}
+/* Assicurati che il burger menu sia sempre a destra */
+/* Burger menu allineato a destra */
+.navbar-toggler {
+    margin-left: auto;
+    width: auto;
+}
+
+/* Contenitore navbar fluid con padding per evitare overflow */
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Navbar link a destra quando la navbar è espansa */
+.navbar-nav {
+    margin-left: auto;
+}
+/* Mappa container styling to match the card styling */
+.mappa-container {
+    border-radius: 20px;
+    max-width: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mappa-container iframe{
+    border-radius: 15px;
+
+}
+
+.mappa-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.mappa-container a:hover {
+    color: #FF7B7B;
+}
+
+
+.ParteCards .cardIMG img{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cardIMG{
+    max-width:45.5%;
+    height:auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.cardIMG:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

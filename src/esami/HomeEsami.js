@@ -23,6 +23,8 @@ function HomeEsami(){
           <li><Link to="../esami/ESAME10">Galleria Immagini</Link></li>
           <li><Link to="../esami/ESAME11">Behance Form Accesso</Link></li>
           <li><Link to="../esami/ESAME12">NON APRIRE (API OpenTranslate)</Link></li>
+          <li><Link to="../esami/ESAMEESERCITAZIONE">Prova X usare un po di bootstrap e un API</Link></li>
+
 
         </ul>
       </nav>

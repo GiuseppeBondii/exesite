@@ -30,6 +30,7 @@ import ESAME9 from './esami/ESAME9';
 import ESAME10 from './esami/ESAME10';
 import ESAME11 from './esami/ESAME11';
 import ESAME12 from './esami/ESAME12';
+import ESAMEESERCITAZIONE from './esami/ESAMEESERCITAZIONE';
 
 
 function App() {
@@ -65,6 +66,8 @@ function App() {
           <Route path="/esami/ESAME10" element={<ESAME10/>} />
           <Route path="/esami/ESAME11" element={<ESAME11/>} />
           <Route path="/esami/ESAME12" element={<ESAME12/>} />
+          <Route path="/esami/ESAMEESERCITAZIONE" element={<ESAMEESERCITAZIONE/>} />
+
 
 
         </Routes>
